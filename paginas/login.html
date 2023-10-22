@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/login.css">
+    <title>Iniciar sesión o registrarse | Truco</title>
+</head>
+<body>
+    <header>
+        <h1>Truco</h1>
+    </header>
+    <main>
+        <div class="login">
+            <header>
+                <h2>Iniciar Sesión</h2>
+            </header>
+            <form>
+                <input type="email" placeholder="Correo Electrónico" id="email" autocomplete="off" required>
+                <input type="password" placeholder="Contraseña" id="password" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <footer>
+                <h4><a id="forgot-password" href="#">¿Olvidaste tu contraseña?</a></h4>
+                <h4>¿No estás registrado todavía? <a href="#">Registrate</a></h4>
+            </footer>
+        </div>
+        <div class="register">
+            <header>
+                <h2>Registrarse</h2>
+            </header>
+            <form>
+                <input type="email" placeholder="Correo Electrónico" required id="registration-mail">
+                <input type="text" placeholder="Usuario" required id="registration-username">
+                <input type="date" name="fechaDeNacimiento" required id="birthdate">
+                <input type="password" placeholder="Contraseña" required id="registration-password">
+                <input type="password" placeholder="Confirmar contraseña" required id="confirm-password">
+                <button type="submit" id="btn-register">Registrarse</button>
+            </form>
+            <footer>
+                <h4>¿Ya tenés una cuenta? <a href="#">Iniciá sesión</a></h4>
+            </footer>
+        </div>
+    </main>
+    <script src="../scripts/login.js"></script>
+</body>
+</html>
